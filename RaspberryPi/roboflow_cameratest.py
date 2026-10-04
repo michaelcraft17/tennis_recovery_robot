@@ -1,3 +1,4 @@
+import os
 import cv2
 import inference
 import threading
@@ -7,7 +8,7 @@ import time
 image_path = 'image.jpg'
 
 #Load the model and get a prediction
-model = inference.get_model(model_id = "tennis_ball-c7buz/1", api_key="l9eXl0psjHcWXHpsevfs")
+model = inference.get_model(model_id = "tennis_ball-c7buz/1", api_key=os.environ["ROBOFLOW_API_KEY"])
 results = model.infer(image=image_path)
 
 capture = cv2.VideoCapture(0)
