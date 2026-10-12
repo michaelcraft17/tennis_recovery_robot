@@ -4,6 +4,8 @@ An autonomous robot that finds tennis balls on a court and collects them. It run
 
 This repository has the robot-side code from my computer vision and robotics research at Cal Poly Pomona's SoftCom Lab.
 
+**Mentor:** [@Sahagun](https://github.com/Sahagun)
+
 ## What's here
 
 | File | What it does |
